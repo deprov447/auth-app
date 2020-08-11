@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-  </head>
-  <body>
-    <h1>Login</h1>
-
+    <h1>Login/Signup</h1>
+    
     <form action="/login" method="post">
       <input type="text" name="username" placeholder="username" />
-      <input type="text" name="password" placeholder="password" />
-      <button type="submit">Submit</button>
+      <input type="password" name="password" placeholder="password" />
+      <button type="submit">Login or Signup</button>
     </form>
-    <script>
-        var button=document.querySelector("button")
-        button.addEventListener("click",function(){
-            alert("If user doesnt exist, a new account will be created");
-        })
-    </script>
+    <p><b>Note:</b> If user doesnt exist, a new user will be created and client will be redirected to login route again.</p>
   </body>
 </html>
